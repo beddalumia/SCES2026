@@ -1,4 +1,4 @@
-# Slides for my [contributed talk](https://smartconf.jp/content/sces2026/pg_session/15721) at SCES 2026 (Toyama, Japan)
+# Slides for my [talk](https://smartconf.jp/content/sces2026/pg_session/15721) at SCES 2026 (Toyama, Japan)
 
 The abtract can be found [here](./Abstract_SCES2026.pdf).
 

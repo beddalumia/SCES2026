@@ -319,8 +319,6 @@ title: Fermionic Negativity
 To account for ==$\mathrm{fermionic}$== anticommutation rules the partial transpose is best written as
 <br />
 
-<v-clicks>
-
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 $\rho^{\color{#D848EE}T\!_{_{_\mathrm{B}}}} = \displaystyle\sum_{\Psi^\mathrm{A}_\lambda}\sum_{\Psi^\mathrm{A}_\nu}\sum_{\Psi^\mathrm{B}_\lambda}\sum_{\Psi^\mathrm{B}_\nu}
     \langle{\Psi^\mathrm{A}_\lambda\Psi_\lambda^\mathrm{B}}|{\rho}|{\Psi^\mathrm{A}_\nu\Psi_\nu^\mathrm{B}} \rangle
@@ -339,6 +337,8 @@ where ==$\small \color{#D8760E} \phi_{\lambda\nu}^\mathrm{AB} = \tfrac{1}{2}{\le
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 and $\small \mathrm{P}(|n_1, n_2, \dots \rangle) = \biggl(\displaystyle\sum_i n_i \biggr)\!\!\!\!\!\mod 2\,$ is the parity of the given Fock state $|n_1, n_2, \dots \rangle$.
 
+<v-click>
+
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 --> We can measure the entanglement with the so-called **fermionic negativity**
 $$
@@ -346,7 +346,7 @@ $$
 $$
 
 
-</v-clicks>
+</v-click>
 
 <!-- $$
 \rho^{\color{#D848EE}T\!_{_{_\mathrm{B}}}}
@@ -386,7 +386,7 @@ transition: slide-up
   
   <v-clicks>
 
-  - the ==$\exp\!\left(i\pi\phi_{\lambda\nu}^\mathrm{AB}\right)$== phase is nontrivial only for the elements in the dimer density matrix that ==break the local P-SSR==
+  - the ==$\exp(i\pi\phi_{\lambda\nu}^{ij})$== phase is nontrivial only for the elements in the dimer density matrix that ==break the local P-SSR==
   
   &nbsp;&nbsp;&nbsp;&nbsp;
   -> ${\Large \color{#3D81F6}\rho_{_{\uparrow\downarrow}}\!}$ and ${\Large \color{#F43F5E}\rho_{_\mathrm{hd}}}$ give qubit-like entanglement    
@@ -427,7 +427,7 @@ transition: slide-up
 
   $$
   \small
-  \mathcal{N}^\mathrm{F}_\mathrm{AB} = \log_2 \!\!\left[\sum_{\{\varepsilon^{T_{_\mathrm{B}}}\}}\Bigl(\varepsilon^{T_\mathrm{B}}\Bigr)\right], \quad \left\{\varepsilon^{T_\mathrm{B}}\right\} = \mathrm{SVD}(\rho^{T_\mathrm{B}})
+  \mathcal{N}^\mathrm{F}_{ij} = \log_2 \!\!\left[\sum_{\{\varepsilon^{T_{_j}}\}}\Bigl(\varepsilon^{T_j}\Bigr)\right], \quad \left\{\varepsilon^{T_j}\right\} = \mathrm{SVD}(\rho^{T_j})
   $$
 
   - The local P-SSR (which **deletes** the ${\color{#F59D13}\Delta n=1}$ elements), recovers a block-diagonal form! 
@@ -435,17 +435,17 @@ transition: slide-up
   <v-clicks>   
 
   &nbsp;&nbsp;&nbsp;&nbsp;
-  -> We can define ${\color{#3D81F6}\mathcal{N}_{\uparrow\downarrow}}$ and ${\color{#FB2D45}\mathcal{N}_\mathrm{hd}}$ by restricting  
+  -> We can define ${\color{#3D81F6}\mathcal{N}^{\uparrow\downarrow}_{ij}}$ and ${\color{#FB2D45}\mathcal{N}^\mathrm{hd}_{ij}}$ by restricting  
   &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
   the $\mathrm{SVD}$ to these blocks
 
   &nbsp;&nbsp;&nbsp;&nbsp;
-  -> We would have $\mathcal{N}_{\tiny\text{P-SSR}} = {\color{#3D81F6}\mathcal{N}_{\uparrow\downarrow}} \overset{\star}{+} {\color{#FB2D45}\mathcal{N}_\mathrm{hd}}$     
+  -> We would have $\mathcal{N}_{\tiny\text{P-SSR}} = {\color{#3D81F6}\mathcal{N}^{\uparrow\downarrow}_{ij}} \overset{\star}{+} {\color{#FB2D45}\mathcal{N}^\mathrm{hd}_{ij}}$     
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   $\tiny^\star\text{the composition rule for negativities involves a logarithm}$ 
 
-  - Our way to define ${\color{#F59D13}\mathcal{N}_t^\mathrm{F}}$ is just as     
-  ${\color{#F59D13}\mathcal{N}_t^\mathrm{F}} \equiv \mathcal{N}_\mathrm{AB}^\mathrm{F} \overset{\star}{-} \mathcal{N}_{\tiny\text{P-SSR}} = \mathcal{N}_\mathrm{AB}^\mathrm{F} \overset{\star}{-} {\color{#3D81F6}\mathcal{N}_{\uparrow\downarrow}} \overset{\star}{-} {\color{#FB2D45}\mathcal{N}_\mathrm{hd}}$
+  - Our way to define ${\color{#F59D13}\mathcal{N}^{\mathrm{F}t}_{ij}}$ is just as     
+  ${\color{#F59D13}\mathcal{N}^{\mathrm{F}t}_{ij}} \equiv \mathcal{N}_\mathrm{AB}^\mathrm{F} \overset{\star}{-} \mathcal{N}_{\tiny\text{P-SSR}} = \mathcal{N}_\mathrm{AB}^\mathrm{F} \overset{\star}{-} {\color{#3D81F6}\mathcal{N}^{\uparrow\downarrow}_{ij}} \overset{\star}{-} {\color{#FB2D45}\mathcal{N}^\mathrm{hd}_{ij}}$
 
   <!-- &nbsp;&nbsp;&nbsp;&nbsp;
   -> Easy to do with $\mathcal{N}^\mathrm{F}_\mathrm{AB}$ as a measure of $E_\mathrm{AB}$ -->
@@ -495,7 +495,7 @@ transition: none
 
 - Discrete (small!) bath
 
-- We focus only on $\langle i j \rangle$
+- We focus only on $\langle i j \rangle$  **(today)**
 
 - We disallow AFM ordering
 
@@ -527,13 +527,13 @@ transition: slide-left
 <div class="grid-item grid-col-span-2 pt-10 mb-15"><img src="/images/half_sym_neg.svg" width=525/></div>
 <div class="grid-item grid-col-span-1 text-left">
 
-- ${\color{#F59D13}\mathcal{N}_t^\mathrm{F}}$ is very large for $U\ll t$
+- ${\color{#F59D13}\mathcal{N}^{\mathrm{F}t}}$ is very large for $U\ll t$
 
 <v-clicks>
 
-- ${\color{#3D81F6}\mathcal{N}_{\uparrow\downarrow}}$ & ${\color{#FB2D45}\mathcal{N}_\mathrm{hd}}$ are small for $U\ll t$
-- ${\color{#3D81F6}\mathcal{N}_{\uparrow\downarrow}}$ saturates while
-${\color{#FB2D45}\mathcal{N}_\mathrm{hd}}$ vanishes at $U\gg t$
+- ${\color{#3D81F6}\mathcal{N}^{\uparrow\downarrow}}$ & ${\color{#FB2D45}\mathcal{N}^\mathrm{hd}}$ are small for $U\ll t$
+- ${\color{#3D81F6}\mathcal{N}^{\uparrow\downarrow}}$ rises and then saturates while
+${\color{#FB2D45}\mathcal{N}^\mathrm{hd}}$ vanishes at $U\gg t$
 </v-clicks>
 
 <v-click>
@@ -650,7 +650,7 @@ transition: none
 
   <v-clicks>
 
-  Surely easier to target ${\color{#3D81F6}\mathcal{N}_{\uparrow\downarrow}}$ and ${\color{#FB2D45}\mathcal{N}_\mathrm{hd}}$ than ${\color{#F59D13}\mathcal{N}_t^\mathrm{F}}$
+  Surely easier to target ${\color{#3D81F6}\mathcal{N}^{\uparrow\downarrow}_{ij}}$ and ${\color{#FB2D45}\mathcal{N}^\mathrm{hd}_{ij}}$ than ${\color{#F59D13}\mathcal{N}^{\mathrm{F}t}_{ij}^\mathrm{F}}$
 
   Unfortunately still hard to directly access it, at least on solid state systems...
 
@@ -726,7 +726,7 @@ transition: slide-up
 
 <v-click>
 
-$$ 2^{\mathcal{N}_{\uparrow\downarrow}} - 1 \;\ge\; \max\Big\{0,\; -2\langle S_i\!\cdot\!S_j\rangle - \tfrac{2}{3}\langle S_i^2\rangle\Big\} $$
+$$ 2^{\mathcal{N}^{\uparrow\downarrow}_{ij}} - 1 \;\ge\; \max\Big\{0,\; -2\langle S_i\!\cdot\!S_j\rangle - \tfrac{2}{3}\langle S_i^2\rangle\Big\} $$
 
 </v-click>
 

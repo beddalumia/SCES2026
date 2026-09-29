@@ -25,53 +25,67 @@ Research assistant at the Technische Universität Wien --- _Institut für Festk�
 **SCES 2026** --- [city, date] --- _International Conference on Strongly Correlated Electron Systems_
 
 ---
-layout: image-right
+layout: default
 title: Why two-site entanglement
-color: black
-image: images/nonlocal_mode_corr.svg
 slide_info: false
 ---
 
 # Why two-site entanglement?
 
-The SCES bet on the _third quantum revolution_:
+<div class="grid w-full grid-cols-5 gap-8 mt-2">
+
+<div class="col-span-3">
+
+The SCES _bet_ on the third quantum revolution:
 
 <v-clicks>
 
-- interactions grant **richer quantum resources**
-- which are **operationally accessible**
+- strong interactions grant **richer quantum resources** than other platforms
+- these resources are **operationally accessible**
 
 </v-clicks>
 
 <v-click>
 
--> quantify them with **entanglement monotones**, on a pair of sites $\langle ij \rangle$
+-> we can **quantify** them, with **entanglement monotones**
 
+-> in the simplest building block (a pair of sites $i, j$), the
+   spin structure factor $\langle S_i\!\cdot\!S_j\rangle$  gives
+   all the answers (first talk of the session by A. Scheie!)
 </v-click>
 
 <v-click>
-
-But two-site entanglement arises already from **tunneling**: it is large in **noninteracting** systems, with no obvious link to correlations in the SCES sense
-
-</v-click>
-
-<v-click>
-
-Spins: $\langle S_i\!\cdot\!S_j\rangle$ -> concurrence (A. Scheie, this session).    
+  
 **What changes when electrons can move?**
 
 </v-click>
 
+<v-click>
+
+Orbital two-site entanglement arises also from **tunneling**: it can be large in **noninteracting** systems, with no obvious link to inter-particle correlations
+
+</v-click>
+
+
+</div>
+
+<div class="col-span-2 flex justify-center items-start">
+<img src="/images/nonlocal_mode_corr.svg" class="h-100 w-auto" />
+</div>
+
+</div>
+
 <!--
-Hook: the correlator shortcut works for localized spins because each site is a qubit; once charge fluctuates, a site has four states and one needs the full two-site density matrix. The last slide closes this loop.
+Hook: The last click ties the talk to Scheie's opening talk.
+      The last slide closes this loop.
 -->
 
 ---
 layout: default
-title: Why SSR I
+title: SSR I
 ---
 
-# Why superselection rules?
+# Why to symmetry resolve?
 
 <br />
 
@@ -80,14 +94,14 @@ title: Why SSR I
 </div>  
   <v-clicks>
 
-  - Fundamental rule of quantum mechanics :   
+  - **Fundamental rule** of quantum mechanics :   
     -> No superpositions of states with different parity of the electron number<sup>1</sup>   
   - It surely applies to full and reduced states of a fermionic system   
-    -> in practice it applies to any _local_ operation<sup>2</sup>
+    -> in practice it applies to any _local_ operation<sup>2</sup> (**operational access**)
   - Even stronger (physical/formal) arguments for the local P-SSR:   
     -> It is needed by the no-signaling theorem<sup>3</sup>    
     -> It is required for mathematical consistency<sup>4</sup>    
-    -> It ensures robustness against _typical_ evolution<sup>5</sup>  
+    -> It ensures robustness along _typical_ quantum protocls<sup>5</sup>  
 
   </v-clicks>
 
@@ -103,11 +117,11 @@ title: Why SSR I
 
 ---
 layout: default
-title: Why SSR II
+title: SSR II
 transition: slide-up
 ---
 
-# Why superselection rules?
+# Why to symmetry resolve?
 
 <br />
 
@@ -150,7 +164,7 @@ title: Symmetries of a mixed Hubbard dimer 1
 <div class="neversink-green-light-scheme ns-c-bind-scheme"> 
 
 
-# &nbsp; Symmetries of a Hubbard dimer (in a general mixed state) 
+# &nbsp; Symmetries of a (mixed) two-site Hubbard subsystem
 </div>
 
 <div class="grid w-full h-fit grid-cols-4 grid-rows-1 mt-10 mb-auto">
@@ -163,9 +177,12 @@ title: Symmetries of a mixed Hubbard dimer 1
 
   <v-clicks>
 
-  - The Hubbard model conserves the charge $N$ (and magnetization $m$)
-  - Of course this does not imply a local conservation of $n_i$ and $n_j$
-  - So in general we have quantum superpositions (off-diagonals)    
+  - The Hubbard model conserves the total charge and magnetization in the lattice     
+    --> $\rho_{ij}$ is **block-diagonal** in $N_{ij}$ and $m_{ij}$
+  - Of course, this does **not** imply a local conservation of $n_i$, $n_j$,
+    $m_i$ and $m_j$
+  - Off-diagonal **quantum amplitudes** (colored)
+    compete with classical probabilities (black)  
     ==**->** entanglement between $i$ and $j$==
     <div class="flex justify-center my-4">
     <img src="/images/dimer_entangled.svg" width="200" />
@@ -182,7 +199,7 @@ transition: none
 
 <div class="neversink-green-light-scheme ns-c-bind-scheme"> 
 
-# &nbsp; Symmetries of a Hubbard dimer (in a general mixed state) 
+# &nbsp; Amplitudes are labeled by local charge jumps
 
 </div>
 
@@ -190,27 +207,35 @@ transition: none
 
   <div class="grid-item grid-col-span-2 h-91"><img src="/images/cdmft_ssr.svg" class="h-full w-auto ml-3.5 " />   
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <kbd> Rotated to highlight single-site symmetries  </kbd></div>
+  <kbd> Rotated to highlight single-site symmetries </kbd></div>
 
   <div class="grid-item grid-col-span-2 ml-7"> 
 
-  - So in general we have quantum superpositions (off-diagonals)    
-    ==**->** entanglement between $i$ and $j$==
-    <div class="flex justify-left my-4 ml-17 ">
-    <img src="/images/dimer_entangled.svg" width="150" />
-    </div>  
+  <div class="flex justify-center mb-4">
+    <img src="/images/dimer_entangled.svg" width="200" />
+  </div>
 
-  <v-clicks depth=2>
+  <v-clicks>
 
-  - But **local** SSRs inhibit all quantum superpositions except:
-    - holon-doublon binding   
-      ${\color{#F43F5E}\rho_{_\mathrm{hd}} \!\!=\, \mid \uparrow\downarrow \rangle\langle \bullet\!\mid \otimes \mid\!\bullet \rangle\langle \uparrow\downarrow \mid}$ 
-    - antiferromagnetic (RVB) fluctuations  
-      ${\color{#3D81F6}\rho_{_{\uparrow\downarrow}} \!\!=\, \mid \uparrow \rangle\langle \downarrow \mid \otimes \mid\downarrow\rangle\langle \uparrow\mid}$ 
+  - $\Delta n = 1$: one electron changes site    
+    --> **hopping** amplitudes    
+    ${\color{#F59D13}\rho_{t} \!=\, \mid \uparrow \rangle\langle \bullet\!\mid \otimes \mid\!\bullet \rangle\langle \uparrow \mid}$ (and many others)
+  - $\Delta n = 0$: charges frozen, spins exchanged    
+    --> **antiferromagnetic** amplitude    
+    ${\color{#3D81F6}\rho_{\uparrow\downarrow} \!=\, \mid \uparrow \rangle\langle \downarrow \mid \otimes \mid\downarrow\rangle\langle \uparrow\mid}$ (spin-singlets)
+  - $\Delta n = 2$: holons and doublons swap sites    
+    --> **holon-doublon** amplitude    
+    ${\color{#FB2D45}\rho_{\mathrm{hd}} \!=\, \mid \uparrow\downarrow \rangle\langle \bullet\!\mid \otimes \mid\!\bullet \rangle\langle \uparrow\downarrow \mid}$ (like $\eta$-pairing)
 
-  </v-clicks></div>
+  </v-clicks>
+
+  </div>
 
 </div>
+
+<!--
+Define the colours here, as amplitudes of the two-site state. Do not map them onto t, J, pair hopping: the point of the partial-transpose slide is precisely that entanglement is a nonlinear competition between an amplitude and the populations of other configurations.
+-->
 
 ---
 layout: default
@@ -222,7 +247,7 @@ transition: none
 <div class="neversink-fuchsia-light-scheme ns-c-bind-scheme"> 
 
 
-# &nbsp; Detecting entanglement via partial transposing 
+# &nbsp; Quantifying entanglement via partial transposing
 </div>
 
 <div class="grid w-full h-fit grid-cols-4 grid-rows-1 mt-10 mb-auto">
@@ -255,7 +280,7 @@ title: Partial Transposing 2
 <div class="neversink-fuchsia-light-scheme ns-c-bind-scheme"> 
 
 
-# &nbsp; Detecting entanglement via partial transposing 
+# &nbsp; Quantifying entanglement via partial transposing 
 </div>
 
 <div class="grid w-full h-fit grid-cols-4 grid-rows-1 mt-10 mb-auto">
@@ -285,7 +310,7 @@ title: Fermionic Negativity
 
 <div class="neversink-fuchsia-light-scheme ns-c-bind-scheme"> 
 
-# &nbsp; Detecting entanglement via partial transposing 
+# &nbsp; Quantifying entanglement via partial transposing
 </div>
 
 <br />
@@ -317,7 +342,7 @@ and $\small \mathrm{P}(|n_1, n_2, \dots \rangle) = \biggl(\displaystyle\sum_i n_
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 --> We can measure the entanglement with the so-called **fermionic negativity**
 $$
-\mathcal{N}^\mathrm{F}_\mathrm{AB} = \log_2 \!\!\left[\sum_{\{\varepsilon^{T_{_\mathrm{B}}}\}}\Bigl(\varepsilon^{T_\mathrm{B}}\Bigr)\right], \quad \left\{\varepsilon^{T_\mathrm{B}}\right\} = \mathrm{svd}(\rho^{T_\mathrm{B}})
+\mathcal{N}^\mathrm{F}_\mathrm{AB} = \log_2 \!\!\left[\sum_{\{\varepsilon^{T_{_\mathrm{B}}}\}}\Bigl(\varepsilon^{T_\mathrm{B}}\Bigr)\right], \quad \left\{\varepsilon^{T_\mathrm{B}}\right\} = \mathrm{SVD}(\rho^{T_\mathrm{B}})
 $$
 
 
@@ -344,7 +369,7 @@ transition: slide-up
 <div class="neversink-fuchsia-light-scheme ns-c-bind-scheme"> 
 
 
-# &nbsp; Detecting entanglement via partial transposing 
+# &nbsp; Quantifying entanglement via partial transposing 
 </div>
 
 <div class="grid w-full h-fit grid-cols-4 grid-rows-1 mt-10 mb-auto">
@@ -364,13 +389,14 @@ transition: slide-up
   - the ==$\exp\!\left(i\pi\phi_{\lambda\nu}^\mathrm{AB}\right)$== phase is nontrivial only for the elements in the dimer density matrix that ==break the local P-SSR==
   
   &nbsp;&nbsp;&nbsp;&nbsp;
-  -> ${\Large \color{#3D81F6}\rho_{_{\uparrow\downarrow}}\!}$ and ${\Large \color{#F43F5E}\rho_{_\mathrm{hd}}}$ give "~boson entanglement"    
+  -> ${\Large \color{#3D81F6}\rho_{_{\uparrow\downarrow}}\!}$ and ${\Large \color{#F43F5E}\rho_{_\mathrm{hd}}}$ give qubit-like entanglement    
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   (~spinon, ~holon, ~doublon)
+   (e.g. thermal death, tipically short range...)
   <br /><br />
 
-  - If we __resolve__ the three contributions we
-    might access meaningful physical insight
+  - If we __resolve__ the three contributions to $\mathcal{N}^\mathrm{F}_{ij}$ we
+    might access meaningful physical insight    
+    (RVB vs holon-doublon binding vs hopping)
 
   </v-clicks>
 
@@ -388,7 +414,7 @@ transition: slide-up
 <div class="neversink-orange-light-scheme ns-c-bind-scheme"> 
 
 
-# &nbsp; The general mixed case (even at $T=0$): how to resolve? 
+# &nbsp; How to define our symmetry resolution 
 </div>
 
 <div class="grid w-full h-fit grid-cols-4 grid-rows-1 mt-10 mb-auto">
@@ -397,30 +423,38 @@ transition: slide-up
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <kbd> Reshuffled to highlight PT symmetries  </kbd></div>
   
-  <div class="grid-item grid-col-span-2 ml-7"> 
+  <div class="grid-item grid-col-span-2 ml-0"> 
 
-  - The local P-SSR (which ==deletes the yellow== elements), recovers a block-diagonal form! 
+  $$
+  \small
+  \mathcal{N}^\mathrm{F}_\mathrm{AB} = \log_2 \!\!\left[\sum_{\{\varepsilon^{T_{_\mathrm{B}}}\}}\Bigl(\varepsilon^{T_\mathrm{B}}\Bigr)\right], \quad \left\{\varepsilon^{T_\mathrm{B}}\right\} = \mathrm{SVD}(\rho^{T_\mathrm{B}})
+  $$
+
+  - The local P-SSR (which **deletes** the ${\color{#F59D13}\Delta n=1}$ elements), recovers a block-diagonal form! 
 
   <v-clicks>   
 
   &nbsp;&nbsp;&nbsp;&nbsp;
-  -> We can define ${\color{#3D81F6}E_{\uparrow\downarrow}}$ and ${\color{#FB2D45}E_\mathrm{hd}}$ in a clear way
+  -> We can define ${\color{#3D81F6}\mathcal{N}_{\uparrow\downarrow}}$ and ${\color{#FB2D45}\mathcal{N}_\mathrm{hd}}$ by restricting  
+  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;
+  the $\mathrm{SVD}$ to these blocks
 
   &nbsp;&nbsp;&nbsp;&nbsp;
-  -> We would have $E_{\tiny\text{P-SSR}} = {\color{#3D81F6}E_{\uparrow\downarrow}} \overset{\star}{+} {\color{#FB2D45}E_\mathrm{hd}}$     
+  -> We would have $\mathcal{N}_{\tiny\text{P-SSR}} = {\color{#3D81F6}\mathcal{N}_{\uparrow\downarrow}} \overset{\star}{+} {\color{#FB2D45}\mathcal{N}_\mathrm{hd}}$     
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  $\tiny^\star\text{recall the composition rule for negativities}$ 
+  $\tiny^\star\text{the composition rule for negativities involves a logarithm}$ 
 
-  - The best way to define ${\color{#F59D13}E_{t}}$ is just as     
-  $E_\mathrm{AB} \equiv {\color{#F59D13}E_{t}} \overset{\star}{+} {\color{#3D81F6}E_{\uparrow\downarrow}} \overset{\star}{+} {\color{#FB2D45}E_\mathrm{hd}}$, i.e.$\,$the portion suppressed by the P-SSR
+  - Our way to define ${\color{#F59D13}\mathcal{N}_t^\mathrm{F}}$ is just as     
+  ${\color{#F59D13}\mathcal{N}_t^\mathrm{F}} \equiv \mathcal{N}_\mathrm{AB}^\mathrm{F} \overset{\star}{-} \mathcal{N}_{\tiny\text{P-SSR}} = \mathcal{N}_\mathrm{AB}^\mathrm{F} \overset{\star}{-} {\color{#3D81F6}\mathcal{N}_{\uparrow\downarrow}} \overset{\star}{-} {\color{#FB2D45}\mathcal{N}_\mathrm{hd}}$
 
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  -> Easy to do with $\mathcal{N}^\mathrm{F}_\mathrm{AB}$ as a measure of $E_\mathrm{AB}$
+  <!-- &nbsp;&nbsp;&nbsp;&nbsp;
+  -> Easy to do with $\mathcal{N}^\mathrm{F}_\mathrm{AB}$ as a measure of $E_\mathrm{AB}$ -->
 
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  -> Hard open problem with entanglement    
+  <!-- &nbsp;&nbsp;&nbsp;&nbsp;
+  -> Hard open problem with monotones based    
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  $\,$measures based on entropies 🥲
+  $\,$on entropies, we can only dissect $E_{\tiny\text{P-SSR}}$ 🥲 -->
+  <!-- NO TIME FOR THIS -->
 
   </v-clicks>
 
@@ -485,9 +519,9 @@ Hubbard dimer reference:
 
 <img src="/images/2-site.svg" class="h-40 ml-3 mt-0 mb-5" />
 
-- ${\color{#3D81F6}E_{\uparrow\downarrow}}$ still plateaus at $U\gg t$
-- ${\color{#FB2D45}E_\mathrm{hd}}$ nearly vanishes at $U\ll t$
-- ${\color{#F59D13}E_{t}}$ accounts for the quite 
+- ${\color{#3D81F6}\mathcal{N}_{\uparrow\downarrow}}$ still plateaus at $U\gg t$
+- ${\color{#FB2D45}\mathcal{N}_\mathrm{hd}}$ nearly vanishes at $U\ll t$
+- ${\color{#F59D13}\mathcal{N}_t^\mathrm{F}}$ accounts for the quite 
   large negativity in the $U\ll t$ regime
 
 
@@ -527,8 +561,8 @@ title: Doped QRE
 <v-clicks at=0>
 
   - We dope the Mott insulator found at $U/D=2.3$
-  - Both $E_{\langle ij \rangle}^\mathrm{hd}$ and $E_{\langle ij \rangle}^{\uparrow\downarrow}$ decrease in the bad metal up to $\delta\simeq0.2$
-  - The spin-singlet $E_{\langle ij \rangle}^{\uparrow\downarrow}$ vanishes in the normal Fermi liquid, while there is some residual $E_{\langle ij \rangle}^\mathrm{hd}$...
+  - Both $\mathcal{N}_{\langle ij \rangle}^\mathrm{hd}$ and $\mathcal{N}_{\langle ij \rangle}^{\uparrow\downarrow}$ decrease in the bad metal up to $\delta\simeq0.2$
+  - The spin-singlet $\mathcal{N}_{\langle ij \rangle}^{\uparrow\downarrow}$ vanishes in the normal Fermi liquid, while there is some residual $\mathcal{N}_{\langle ij \rangle}^\mathrm{hd}$...
 
 </v-clicks>
 </div>
@@ -598,7 +632,7 @@ transition: none
 
   <v-clicks>
 
-  Surely easier to target ${\color{#3D81F6}E_{\uparrow\downarrow}}$ and ${\color{#FB2D45}E_\mathrm{hd}}$ than ${\color{#F59D13}E_{t}}$
+  Surely easier to target ${\color{#3D81F6}\mathcal{N}_{\uparrow\downarrow}}$ and ${\color{#FB2D45}\mathcal{N}_\mathrm{hd}}$ than ${\color{#F59D13}\mathcal{N}_t^\mathrm{F}}$
 
   Unfortunately still hard to directly access it, at least on solid state systems...
 

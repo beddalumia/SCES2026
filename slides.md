@@ -469,45 +469,57 @@ If asked "why the negativity": for the superselected blocks, which are two-qubit
 
 ---
 layout: full
-title: MIT 2
+title: MIT 1
+transition: none
 ---
 
 <div class="neversink-rose-scheme ns-c-bind-scheme"> 
 
-# &nbsp; Interaction-driven paramagnetic MIT
+# &nbsp; Mott-Hubbard transition in CDMFT/ED
 
 </div>
 
 <div class="grid w-full h-fit grid-cols-3 grid-rows-1 mt-7 mb-auto">
-<div class="grid-item grid-col-span-2 pt-10"><img src="/images/half_sym_ree.svg" width=525/></div>
-<div class="grid-item grid-col-span-1 text-center">
-<v-click at=0>
+<div class="grid-item grid-col-span-2 pt-10"><img src="/images/half_sym_neg.svg" width=525/></div>
+<div class="grid-item grid-col-span-1 text-left">
 
-<img src="/images/4x2_ladder.svg" class="w-50 ml-15 mt-0.5" />
-<img src="/images/shells_inkscaped.svg" class="w-150 ml-3 mt-5 mb-5" />
+<img src="/images/2x2_plaquette.svg" class="w-45 ml-5 mt-0.5 mb-2" />
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <kbd> G.Bellomia _et al._, PRB **109**, 115104 </kbd>
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <kbd> Our CDMFT/ED parametrization </kbd> -->
 
-</v-click>
+<v-clicks>
+
+- Plaquette CDMFT at $T=0$
+
+- ED-type diagonalization
+
+- Discrete (small!) bath
+
+- We focus only on $\langle i j \rangle$
+
+- We disallow AFM ordering
+
+</v-clicks>
+
 </div>
 <div class="grid-item grid-col-span-2 text-center h-fit">
 
 <hr/>
 
-Symmetry-resolved versus full entanglement between sites $\langle i j \rangle$
+Full versus symmetry-resolved entanglement between sites $\langle i j \rangle$
 
 </div>
 </div>
 
 ---
 layout: full
-title: MIT 3
+title: MIT 2
 transition: slide-left
 ---
 
 <div class="neversink-rose-scheme ns-c-bind-scheme"> 
 
-# &nbsp; Interaction-driven paramagnetic MIT
+# &nbsp; Mott-Hubbard transition in CDMFT/ED
 
 </div>
 
@@ -515,22 +527,28 @@ transition: slide-left
 <div class="grid-item grid-col-span-2 pt-10 mb-15"><img src="/images/half_sym_neg.svg" width=525/></div>
 <div class="grid-item grid-col-span-1 text-left">
 
-Hubbard dimer reference:
+- ${\color{#F59D13}\mathcal{N}_t^\mathrm{F}}$ is very large for $U\ll t$
 
-<img src="/images/2-site.svg" class="h-40 ml-3 mt-0 mb-5" />
+<v-clicks>
 
-- ${\color{#3D81F6}\mathcal{N}_{\uparrow\downarrow}}$ still plateaus at $U\gg t$
-- ${\color{#FB2D45}\mathcal{N}_\mathrm{hd}}$ nearly vanishes at $U\ll t$
-- ${\color{#F59D13}\mathcal{N}_t^\mathrm{F}}$ accounts for the quite 
-  large negativity in the $U\ll t$ regime
+- ${\color{#3D81F6}\mathcal{N}_{\uparrow\downarrow}}$ & ${\color{#FB2D45}\mathcal{N}_\mathrm{hd}}$ are small for $U\ll t$
+- ${\color{#3D81F6}\mathcal{N}_{\uparrow\downarrow}}$ saturates while
+${\color{#FB2D45}\mathcal{N}_\mathrm{hd}}$ vanishes at $U\gg t$
+</v-clicks>
 
+<v-click>
+
+&nbsp; &nbsp; &nbsp; &nbsp; --> _Hubbard dimer at T = 0_
+<img src="/images/2-site.svg" class="h-44.5 ml-3 mt-0 mb-0" />
+
+</v-click>
 
 </div>
 <div class="grid-item grid-col-span-2 text-center h-fit">
 
 <hr/>
 
-Symmetry-resolved entropy vs negativity between sites $\langle i j \rangle$
+Full versus symmetry-resolved entanglement between sites $\langle i j \rangle$
 
 </div>
 </div>
@@ -570,7 +588,7 @@ title: Doped QRE
 
 <hr/>
 
-Symmetry-resolved versus full entanglement between sites $\langle i j \rangle$ &nbsp; (density jump: Sordi _et al._, PRL **104**, 226402 (2010))
+Full versus symmetry-resolved entanglement between sites $\langle i j \rangle$ &nbsp; (density jump: Sordi _et al._, PRL **104**, 226402 (2010))
 
 </div>
 </div>
@@ -964,4 +982,34 @@ title: Backup imbalance sectors
 
   </div>
 
+</div>
+
+---
+layout: full
+title: MIT 2
+---
+
+<div class="neversink-rose-scheme ns-c-bind-scheme"> 
+
+# &nbsp; Backup: larger clusters
+
+</div>
+
+<div class="grid w-full h-fit grid-cols-3 grid-rows-1 mt-7 mb-auto">
+<div class="grid-item grid-col-span-2 pt-10"><img src="/images/half_sym_ree.svg" width=525/></div>
+<div class="grid-item grid-col-span-1 text-center">
+
+<img src="/images/4x2_ladder.svg" class="w-50 ml-15 mt-0.5" />
+<img src="/images/shells_inkscaped.svg" class="w-150 ml-3 mt-5 mb-5" />
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <kbd> G.Bellomia _et al._, PRB **109**, 115104 </kbd>
+
+</div>
+<div class="grid-item grid-col-span-2 text-center h-fit">
+
+<hr/>
+
+Full versus symmetry-resolved entanglement between sites $\langle i j \rangle$
+
+</div>
 </div>

@@ -10,7 +10,7 @@
    xml:space="preserve"
    id="svg252"
    sodipodi:docname="wip.svg"
-   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -26,14 +26,15 @@
    inkscape:pagecheckerboard="0"
    inkscape:deskcolor="#d1d1d1"
    inkscape:zoom="1.35"
-   inkscape:cx="250"
-   inkscape:cy="250"
-   inkscape:window-width="1500"
-   inkscape:window-height="926"
+   inkscape:cx="251.11111"
+   inkscape:cy="250.37037"
+   inkscape:window-width="1714"
+   inkscape:window-height="1026"
    inkscape:window-x="0"
    inkscape:window-y="0"
    inkscape:window-maximized="1"
-   inkscape:current-layer="svg252" />
+   inkscape:current-layer="svg252"
+   showgrid="false" />
 <g
    id="BACKGROUND">
 	<g
@@ -1033,9 +1034,9 @@
 				</g>
 			</g>
 			<text
-   transform="matrix(0.9909 -0.1344 0.1344 0.9909 110.9478 116.2499)"
-   style="font-family:'GoodDog'; font-size:39.2054px;"
-   id="text240">under construction</text>
+   transform="matrix(0.9909,-0.1344,0.1344,0.9909,110.9478,116.2499)"
+   style="font-size:39.2054px;font-family:GoodDog"
+   id="text240">in preparation</text>
 		</g>
 	</g>
 </g>
@@ -11826,4 +11827,11 @@
 	</g>
 </g>
 
-</svg>
+<text
+   xml:space="preserve"
+   style="font-size:64px;font-family:Calibri;-inkscape-font-specification:Calibri;fill:none;stroke:#3e4ce4;stroke-width:3.245"
+   x="173.27257"
+   y="89.418404"
+   id="text4220"><tspan
+     sodipodi:role="line"
+     id="tspan4218"></tspan></text></svg>

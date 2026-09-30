@@ -84,11 +84,6 @@ Orbital two-site entanglement arises also from **tunneling**:
 
 </div>
 
-<!--
-Hook: The last click ties the talk to Scheie's opening talk.
-      The last slide closes this loop.
--->
-
 ---
 layout: default
 title: SSR I
@@ -110,7 +105,7 @@ title: SSR I
   - Even stronger (physical/formal) arguments for the local P-SSR:   
     -> It is needed by the no-signaling theorem<sup>3</sup>    
     -> It is required for mathematical consistency<sup>4</sup>    
-    -> It ensures robustness along _typical_ quantum protocls<sup>5</sup>  
+    -> It ensures robustness along _typical_ quantum protocols<sup>5</sup>  
 
   </v-clicks>
 
@@ -242,10 +237,6 @@ transition: none
 
 </div>
 
-<!--
-Define the colours here, as amplitudes of the two-site state. Do not map them onto t, J, pair hopping: the point of the partial-transpose slide is precisely that entanglement is a nonlinear competition between an amplitude and the populations of other configurations.
--->
-
 ---
 layout: default
 title: Partial Transposing 1
@@ -357,7 +348,11 @@ $$
 
 </v-click>
 
-<!-- $$
+<!-- 
+
+If asked "why the negativity": for the superselected blocks, which are two-qubit states, the logarithmic negativity is the exact entanglement cost under PPT operations (Audenaert, Plenio, Eisert, PRL 90, 027901 (2003)), i.e. it counts ebits.
+
+$$
 \rho^{\color{#D848EE}T\!_{_{_\mathrm{B}}}}
     = \sum_{\Psi^\mathrm{A}_\lambda}\sum_{\Psi^\mathrm{A}_\nu}\sum_{\Psi^\mathrm{B}_\lambda}\sum_{\Psi^\mathrm{B}_\nu}
     \langle{\Psi^\mathrm{A}_\lambda\Psi_\lambda^\mathrm{B}}|{\rho}|{\Psi^\mathrm{A}_\nu\Psi_\nu^\mathrm{B}} \rangle
@@ -400,7 +395,7 @@ transition: slide-up
   &nbsp;&nbsp;&nbsp;&nbsp;
   -> ${\Large \color{#3D81F6}\rho_{_{\uparrow\downarrow}}\!}$ and ${\Large \color{#F43F5E}\rho_{_\mathrm{hd}}}$ give qubit-like entanglement    
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   (e.g. thermal death, tipically short range...)
+   (e.g. thermal death, typically short range...)
   <br /><br />
 
   - If we __resolve__ the three contributions to $\mathcal{N}^\mathrm{F}_{ij}$ we
@@ -472,7 +467,6 @@ transition: slide-up
 </div>
 
 <!--
-Two sites embedded in the lattice (or in cluster + bath) are in a mixed state even at T = 0: entropies no longer measure entanglement, and the yellow elements couple the spin and charge blocks, so the full negativity does not split by itself. The P-SSR cut removes exactly those couplings.
 If asked "why the negativity": for the superselected blocks, which are two-qubit states, the logarithmic negativity is the exact entanglement cost under PPT operations (Audenaert, Plenio, Eisert, PRL 90, 027901 (2003)), i.e. it counts ebits.
 -->
 
@@ -632,7 +626,7 @@ Full versus symmetry-resolved entanglement between sites $\langle i j \rangle$
 ---
 layout: full
 title: Doped CDMFT 2
-transition: view-transition
+transition: slide-up
 ---
 
 <div class="neversink-rose-light-scheme ns-c-bind-scheme"> 
@@ -642,7 +636,7 @@ transition: view-transition
 </div>
 
 <div class="grid w-full h-fit grid-cols-3 grid-rows-1 mt-7 mb-auto">
-<div class="grid-item grid-col-span-2 pt-10 mb-16"><img src="/images/doped_sym_neg.svg" width=525/></div>
+<div class="grid-item grid-col-span-2 pt-10 mb-16"><img src="/images/doped_sym_inset.svg" width=525/></div>
 <div class="grid-item grid-col-span-1 text-left">
 
   - Remarkably, ${\color{#3D81F6}\mathcal{N}^{\uparrow\downarrow}_{\langle ij \rangle}}$ vanishes exactly in the Fermi liquid  
@@ -667,44 +661,6 @@ Full versus symmetry-resolved entanglement between sites $\langle i j \rangle$
 
 </div>
 </div>
-
----
-layout: full
-title: Doped CDMFT 3
-transition: slide-up
----
-
-<div class="neversink-rose-light-scheme ns-c-bind-scheme"> 
-
-# &nbsp; Doping-driven delocalization in CDMFT/ED
-
-</div>
-
-<div class="grid w-full h-fit grid-cols-3 grid-rows-1 mt-7 mb-auto">
-<div class="grid-item grid-col-span-2 pt-10 mb-16"><img src="/images/doped_sym_inset.svg" width=525/></div>
-<div class="grid-item grid-col-span-1 text-left">
-
-  - Remarkably, ${\color{#3D81F6}\mathcal{N}^{\uparrow\downarrow}_{\langle ij \rangle}}$ vanishes exactly in the Fermi liquid  
-
-
-  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; Small sector so a PPT is   
-  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; faithful: true separability!
-  <img src="/images/cdmft_ssr_transpose.svg" class="w-50 ml-10 mt-0 mb-6.2" />
-
-  - $\mathcal{N}^\mathrm{hd}_{\langle ij \rangle}$ is
-    instead finite (but small)    
-
-
-</div>
-<div class="grid-item grid-col-span-2 text-center h-fit">
-
-<hr/>
-
-Full versus symmetry-resolved entanglement between sites $\langle i j \rangle$
-
-</div>
-</div>
-
 
 ---
 layout: image-right
@@ -786,10 +742,10 @@ transition: slide-up
 
 - **Out of the Heisenberg limit**, we can define spin entanglement by symmetry resolution, but we need the weight of the $\Delta n = 0$ sector --> **need to measure the relevant diagonal elements**:
   $$
-  \rho_{ij}[4,4] = \mid\downarrow\downarrow\rangle\langle\downarrow\downarrow\mid= \left\langle(\hat n_{i,\downarrow} - \hat n_{i\uparrow}\hat n_{i\downarrow})\left(\hat n_{j,\downarrow} -  \hat n_{j\uparrow} \hat n_{j\downarrow}\right)\right\rangle
+  \rho_{ij}[4,4] = \langle\downarrow\downarrow\mid\!\rho_{ij}\!\mid\downarrow\downarrow\rangle= \left\langle(\hat n_{i,\downarrow} - \hat n_{i\uparrow}\hat n_{i\downarrow})\left(\hat n_{j,\downarrow} -  \hat n_{j\uparrow} \hat n_{j\downarrow}\right)\right\rangle
   $$
     $$
-  \rho_{ij}[13,13] = \mid\uparrow\uparrow\rangle\langle\uparrow\uparrow\mid= \left\langle(\hat n_{i,\uparrow} - \hat n_{i\uparrow}\hat n_{i\downarrow})\left(\hat n_{j,\uparrow} -  \hat n_{j\uparrow} \hat n_{j\downarrow}\right)\right\rangle
+  \rho_{ij}[13,13] = \langle\uparrow\uparrow\mid\!\rho_{ij}\!\mid\uparrow\uparrow\rangle= \left\langle(\hat n_{i,\uparrow} - \hat n_{i\uparrow}\hat n_{i\downarrow})\left(\hat n_{j,\uparrow} -  \hat n_{j\uparrow} \hat n_{j\downarrow}\right)\right\rangle
   $$
 
 </v-clicks>
